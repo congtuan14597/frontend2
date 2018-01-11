@@ -1,0 +1,16 @@
+%f-header {
+  height: 130px;
+  background: #243238;
+}
+%f-content {
+  height: 548px;
+  background: #ebeef1;
+}
+%f-button {
+  @include img(relative, 312px, 10px);
+  @include w-h(220px, 40px);
+  margin-left: 10px;
+  border: 0;
+  border-radius: 4px;
+  color: $cl-white;
+}

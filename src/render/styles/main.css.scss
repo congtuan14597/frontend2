@@ -1,0 +1,21 @@
+@import 'abstracts/all';
+@import 'components/header/all';
+@import 'components/content/all';
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.header {
+  @extend %f-header;
+}
+.content {
+  @extend %f-content;
+}
+.btn {
+  button {
+    @extend %f-button;
+  }
+}
+
+

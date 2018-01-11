@@ -1,0 +1,118 @@
+.block-img {
+  position: relative;
+  .list-img {
+      margin-left: 125px;
+      &__img1 {
+        position: absolute;
+        top: -6px;
+        .header-list {
+          position: relative;
+          background: #ff5722;
+          span {
+            @include text(absolute, 6px, $cl-white, 13px, serif);
+            left: 22px;
+            font-weight: $f-weight;
+          }
+        }
+        .img {
+          img {
+            height: 251px;
+            border-radius: 2px;
+          }
+        }
+      }
+      &__img2 {
+        @include img(absolute, 395px, 18px); 
+        .img {
+          img {
+            height: 251px;
+          }
+        }
+      }
+      &__img3 {
+        @include img(absolute, 665px, 18px);
+      }
+      &__img4 {
+        @include img(absolute, 935px, -6px);
+        .header-list {
+          position: relative;
+          background: #ff5722;
+          span {
+            @include text(absolute, 6px, $cl-white, 13px, serif);
+            left: 22px;
+            font-weight: $f-weight;
+          }
+        }
+      }
+    }
+  }
+.list-img {
+    li {
+      margin-top: 135px;
+      margin-left: 10px;
+      display: inline-table;
+    }
+  }
+.header-list {
+  @include w-h(130px, 25px);
+}
+.footer-list {
+  margin-top: -3px;
+  height: 110px;
+  background: white;
+  .list-small {
+    position: relative;
+    img {
+      @include img(absolute, 10px, 20px);
+      height: 35px;
+    }
+    .title-small {
+      @include img(absolute, 52px, 20px);
+      h3 {
+        color: $cl-blue;
+        font-weight: $f-weight;
+        font-size: 15px;
+        font-family: sans-serif;
+        &:hover {
+          color: $cl-hover;
+        }
+      }
+      p {
+        font-size: 13px;
+        font-family: sans-serif;
+      }
+    }
+    .like {
+      img {
+        @include img(absolute, 215px, 25px);
+        height: 25px;
+      }
+    }
+  }
+  .stars {
+    @include img(absolute, 15px, 350px);
+    span {
+      img {
+        height: 17px;
+      }
+    }
+  }
+  .price {
+    @include price(absolute, 12px, 350px);
+    span {
+      font-weight: $f-weight;
+    }
+  }
+}
+.stars2 {
+  @include img(absolute, 15px, 325px);
+  span {
+    img {
+      height: 18px;
+    }
+  }
+}
+.price2 {
+  @include price(absolute, 12px, 325px);
+  font-weight: $f-weight;
+}

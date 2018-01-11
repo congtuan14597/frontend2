@@ -1,0 +1,40 @@
+.btn {
+  @include w-h(100%, 65px);
+  &__livedemo {
+    background: #42a5f5;
+    &:hover {
+      background: #1976d2;
+    }
+    img {
+      @include img(absolute, 60px, 8px);
+    }
+    span {
+      @include img(absolute, 100px, 13px);
+    }
+  }
+  &__addcart {
+    background: #f4511e;
+    &:hover {
+      background: #d84315;
+    }
+    img {
+      @include img(absolute, 60px, 8px);
+      height: 24px;
+    }
+    span {
+      @include img(absolute, 100px, 13px);
+    }
+  }
+  &__addcollection {
+    background: #90a4ae;
+    &:hover {
+      background: #78909c;
+    }
+    img {
+      @include img(absolute, 45px, 8px);
+    }
+    span {
+      @include img(absolute, 85px, 13px);
+    }
+  }
+}

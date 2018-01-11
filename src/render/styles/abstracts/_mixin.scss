@@ -1,0 +1,21 @@
+@mixin text($pos, $top, $color, $f-size, $f-family){
+  position: $pos;
+  top: $top;
+  color: $color;
+  font-size: $f-size;
+  font-family: $f-family;
+}
+@mixin img($pos, $left, $top) {
+  position: $pos;
+  left: $left;
+  top: $top;
+}
+@mixin price($pos, $right, $top) {
+  position: $pos;
+  right: $right;
+  top: $top;
+}
+@mixin w-h($width, $height) {
+  width: $width;
+  height: $height;
+}
